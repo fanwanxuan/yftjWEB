@@ -1,5 +1,6 @@
 body {
     position: relative;
+    font-size: 62.5%;
 }
 
 .container-fluid {
@@ -12,20 +13,18 @@ body {
 
 header {
     height: 80px;
-    width: 1200px;
+    width: 80%;
     margin: 0 auto;
-    border: 1px red solid;
+    display: flex;
 }
 
 header div {
-    width: 40%;
     height: 100%;
-    margin-left: 5rem;
-    float: left;
+    padding-top: 20px;
+    flex: 1;
 }
 
 .nav {
-    width: 54%;
     height: 80px;
     line-height: 80px;
     display: flex;
@@ -36,12 +35,21 @@ header div {
 }
 
 .nav .active {
-    border-top: 2px solid #429a9d;
+    box-shadow: inset 0px 2px 0px #429a9d;
+}
+
+.nav .active a {
+    color: #429a9d;
+}
+
+.nav .active a:focus,
+.nav .active a:hover {
+    box-shadow: inset 0px 2px 0px #429a9d;
 }
 
 .nav a {
-    padding: 11px 17px;
-    color: #429a9d;
+    padding: 0 35px!important;
+    color: #120d09;
     display: inline-block;
 }
 
@@ -88,13 +96,11 @@ header div {
 
 /*banner满屏*/
 
-.swiper-container {}
-
 
 /*内容*/
 
 .container {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     height: auto;
 }
@@ -108,47 +114,77 @@ header div {
 }
 
 .latestInformationLetter {
-    margin: 10px 0 0 0;
-    padding: 10px 0 0 0;
     color: #bfbdc0;
     font-size: 24px;
+    margin-top: 80px;
 }
 
 .latestInformationFont {
     color: #535353;
     font-size: 26px;
+    margin-bottom: 60px;
 }
 
-.latestInformationList {
+.information .img img {
     width: 100%;
-    height: 100%;
+    object-fit: cover;
+}
+
+.information .img {
+    position: relative;
+}
+
+.information .time {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20%;
+    height: 50%;
+    background-color: rgba(62, 135, 145, 0.9);
+}
+
+.time .day,
+.infoTime .day {
+    font-size: 4.5rem;
+    line-height: 1;
+}
+
+.time .date,
+.infoTime .date {
+    font-size: 1.6rem;
+}
+
+.info:nth-child(1) {
+    padding-top: 0;
+    border-top: none;
+}
+
+.info {
     display: flex;
-    flex-direction: row
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-top: 1px #e5eaeb solid;
 }
 
-.latestInformationList ul.left {
-    width: 600px;
-    height: 100%;
+.info .infoTime {
+    width: 70px;
 }
 
-.left {
-    /*display: flex;*/
+.info .text {
+    margin-left: 15px;
+    flex: 1;
 }
 
-.right {
-    width: 40%;
-    height: 100%;
-    margin-left: 50px;
+.text .title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #5d5b5e;
+    margin-bottom: 10px!important;
 }
 
-.right img {
-    width: 100%
-}
-
-strong,
-span {
-    display: block;
-    text-align: left;
+.text .introduction {
+    font-size: 14px;
+    color: #BFBDC0;
 }
 
 .latestInformation strong {
@@ -179,43 +215,6 @@ em {
     height: 100%;
     color: #fff;
     text-align: center;
-}
-
-.latestInformation .right li span {
-    display: inline-block;
-}
-
-.right li {
-    width: 100%;
-    height: 7rem;
-    display: flex;
-}
-
-.right li span i {
-    width: 100%;
-    height: auto;
-}
-
-.right li span:nth-child(1) {
-    width: 18%;
-}
-
-.right li span:nth-child(1) i {
-    display: inline-block;
-}
-
-.right li span:nth-child(2) {
-    width: 100%;
-}
-
-.right strong {
-    font-size: 16px;
-    padding: 0;
-    margin: 0;
-}
-
-.right em {
-    color: #BFBDC0;
 }
 
 
