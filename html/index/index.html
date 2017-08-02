@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+		<META NAME="keywords" CONTENT="芊洵健康">
+		<META NAME="description" CONTENT="芊洵健康">
+		<link rel="stylesheet" href="../../css/normalize/normalize.css" />
+		<link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../css/swiper/swiper.min.css" />
+		<link rel="stylesheet" href="../../css/index/index.css" />
+		<title>芊洵健康</title>
+		<!--[if IE]>
+			<script src="https://cdn.bootcss.com/selectivizr/1.0.2/selectivizr-min.js"></script>
+			<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		< ![endif]-->
+	</head>
+
+	<body>
+		<div class="container-fluid">
+			<!--index-->
+			<header>
+				<div>
+					<img src="../../img/yifan_logo.png" />
+				</div>
+				<!--nav开始-->
+				<ul class="nav nav-tab">
+					<li role="presentation" class="active">
+						<a href="#home" aria-controls="home" role="tab" data-toggle="tab">首页</a>
+					</li>
+					<li role="presentation">
+						<a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">新闻资讯</a>
+					</li>
+					<li role="presentation">
+						<a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">招贤纳士</a>
+					</li>
+				</ul>
+				<!--nav结束-->
+			</header>
+
+			<!-- Swiper -->
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="../../img/banner.png" alt="" /></div>
+					<div class="swiper-slide"><img src="../../img/banner.png" alt="" /></div>
+					<div class="swiper-slide"><img src="../../img/banner.png" alt="" /></div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+
+			</div>
+			<!-- Swiper -->
+			<!--内容-->
+			<div class="container">
+				<!--最新资讯-->
+				<div class="latestInformation">
+					<h1 class="latestInformationLetter">THE LATEST INFORMATION</h1>
+					<h1 class="latestInformationFont">-最新资讯-</h1>
+					<div class="latestInformationList">
+						<ul class="left">
+							<li>
+								<img src="../../img/pic1.png" alt="" />
+							</li>
+							<li>
+								<strong>互联网医疗，离不开医检环节！这是医疗创业者们未关注到的风口</strong>
+								<span>互联网医疗，离不开医检环节！这是医疗创业者们未关注到的风口</span>
+							</li>
+							<li>
+								<button><em>查看更多</em></button>
+							</li>
+						</ul>
+						<ul class="right">
+							<li>
+								<span>
+							  	<i class="font20">05</i>
+							  	<i class="font12">2017-02</i>
+							  </span>
+								<span>
+							 	<strong>互联网医疗，离不开医检环节！这是医疗创业者们未关注到的风口</strong>
+							 	<em>互联网医疗发展到今天,从健康管理到挂号预约、从医生问诊到线上药,中国优质医疗保健信息与在线健康服务平台,医疗保健类网...</em>
+							 </span>
+
+							</li>
+							<li>
+								<span>
+							  	<i class="font20">18</i>
+							  	<i class="font12">2017-02</i>
+							  </span>
+								<span>
+							 	<strong>互联网医疗，离不开医检环节！这是医疗创业者们未关注到的风口</strong>
+							 	<em>互联网医疗发展到今天,从健康管理到挂号预约、从医生问诊到线上药,中国优质医疗保健信息与在线健康服务平台,医疗保健类网...</em>
+							 </span>
+
+							</li>
+							<li>
+								<span>
+							  	<i class="font20">01</i>
+							  	<i class="font12">2017-02</i>
+							  </span>
+								<span>
+							 	<strong>互联网医疗，离不开医检环节！这是医疗创业者们未关注到的风口</strong>
+							 	<em>互联网医疗发展到今天,从健康管理到挂号预约、从医生问诊到线上药,中国优质医疗保健信息与在线健康服务平台,医疗保健类网...</em>
+							 </span>
+
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--关于我们-->
+				<div class="latestInformation">
+					<h1 class="latestInformationLetter">ABOUT US</h1>
+					<h1 class="latestInformationFont">-关于我们-</h1>
+
+				</div>
+			</div>
+			<!--内容-->
+			<footer>
+				<span>
+					&copy; 四川医帆有限公司 京公网安备11000002002025号 京ICP备12043664号-5
+				</span>
+			</footer>
+		</div>
+		<script type="text/javascript" src="../../js/jQuery/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="../../js/swiper/swiper.min.js"></script>
+		<script type="text/javascript" src="../../js/bootstrap/bootstrap.min.js"></script>
+	</body>
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			pagination: '.swiper-pagination',
+			nextButton: '.swiper-button-next',
+			prevButton: '.swiper-button-prev',
+			paginationClickable: true,
+			spaceBetween: 30,
+			centeredSlides: true,
+			autoplay: 2500,
+			autoplayDisableOnInteraction: false
+		});
+	</script>
+
+</html>
