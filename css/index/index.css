@@ -26,6 +26,7 @@ header div {
 .nav {
 	width: 54%;
 	height: 80px;
+	line-height: 80px;
 	display: flex;
 }
 
