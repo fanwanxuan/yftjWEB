@@ -1,144 +1,268 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="renderer" content="webkit">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
-    <META NAME="keywords" CONTENT="芊洵健康">
-    <META NAME="description" CONTENT="芊洵健康">
-    <link rel="stylesheet" href="../../css/normalize/normalize.css" />
-    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="../../css/swiper/swiper.min.css" />
-    <link rel="stylesheet" href="../../css/index/index.css" />
-    <title>芊洵健康</title>
-    <!--[if IE]>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<META NAME="keywords" CONTENT="芊洵健康">
+		<META NAME="description" CONTENT="芊洵健康">
+		<link rel="stylesheet" href="../../css/normalize/normalize.css" />
+		<link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
+		<link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../css/swiper/swiper.min.css" />
+		<link rel="stylesheet" href="../../css/index/index.css" />
+	
+		<title>芊洵健康</title>
+		<!--[if IE]>
 			<script src="https://cdn.bootcss.com/selectivizr/1.0.2/selectivizr-min.js"></script>
 			<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 		< ![endif]-->
-</head>
+		<script src="http://api.map.baidu.com/api?v=2.0&ak=pMz7V4KSgNI54emheY4VNi0QaDmpptv7" type="text/javascript"></script>
+		
+	</head>
 
-<body>
-    <div class="container-fluid">
-        <!--index-->
-        <header>
-            <div>
-                <img src="../../img/yifan_logo.png" />
-            </div>
-            <!--nav开始-->
-            <ul class="nav nav-tab">
-                <li role="presentation" class="active">
-                    <a href="#home" aria-controls="home" role="tab" data-toggle="tab">首页</a>
-                </li>
-                <li role="presentation">
-                    <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">新闻资讯</a>
-                </li>
-                <li role="presentation">
-                    <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">招贤纳士</a>
-                </li>
-            </ul>
-            <!--nav结束-->
-        </header>
+	<body>
+		<div class="container-fluid">
+			<!--index-->
+			<header>
+				<div>
+					<img src="../../img/yifan_logo.png" />
+				</div>
+				<!--nav开始-->
+				<ul class="nav nav-tab">
+					<li role="presentation" class="active">
+						<a href="#home" aria-controls="home" role="tab" data-toggle="tab">首页</a>
+					</li>
+					<li role="presentation">
+						<a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">新闻资讯</a>
+					</li>
+					<li role="presentation">
+						<a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">招贤纳士</a>
+					</li>
+				</ul>
+				<!--nav结束-->
+			</header>
 
-        <!-- Swiper -->
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="../../img/banner.png" alt="" /></div>
-                <div class="swiper-slide"><img src="../../img/banner.png" alt="" /></div>
-                <div class="swiper-slide"><img src="../../img/banner.png" alt="" /></div>
-            </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
+			<!-- Swiper -->
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="../../img/banner.png" alt="" /></div>
+					<div class="swiper-slide"><img src="../../img/banner.png" alt="" /></div>
+					<div class="swiper-slide"><img src="../../img/banner.png" alt="" /></div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
 
-        </div>
-        <!-- Swiper -->
-        <!--内容-->
-        <div class="container information">
-            <!--最新资讯-->
-            <div class="text-center">
-                <h1 class="latestInformationLetter">THE LATEST INFORMATION</h1>
-                <h1 class="latestInformationFont">-&nbsp;最新资讯&nbsp;-</h1>
-                <div class="col-md-12">
-                    <ul class="col-md-6">
-                        <li class="img">
-                            <img src="../../img/pic1.png" />
-                            <div class="time">
-                                <p class="day">06</p>
-                                <p class="date">2017-06</p>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>互联网医疗，离不开医检环节！这是医疗创业者们未关注到的风口</strong>
-                            <span>互联网医疗，离不开医检环节！这是医疗创业者们未关注到的风口</span>
-                        </li>
-                        <li>
-                            <button><em>查看更多</em></button>
-                        </li>
-                    </ul>
-                    <ul class="col-md-6">
-                        <li class="info">
-                            <span class="infoTime">
+			</div>
+			<!-- Swiper -->
+			<!--内容-->
+			<div class="container information" id="container">
+				<!--最新资讯-->
+				<div class="text-center Information col-md-12 ">
+					<h1 class="latestInformationLetter">THE LATEST INFORMATION</h1>
+					<h1 class="latestInformationFont">-&nbsp;最新资讯&nbsp;-</h1>
+					<div class="col-md-12">
+						<ul class="col-md-6">
+							<li class="img">
+								<img src="../../img/pic1.png" />
+								<div class="time">
+									<p class="day">06</p>
+									<p class="date">2017-06</p>
+								</div>
+							</li>
+							<li>
+								<p class="pTitle pText">互联网医疗，离不开医检环节！这是医疗创业者们未关注到的风口</p>
+								<p class="pTitle" style="color:#b5bdc0">互联网医疗发展到今天,从健康管理到挂号预约、从医生问诊到线上药,中国优质医疗保健信息与在线健康服务平台,医疗保健类网...</p>
+							</li>
+							<li style="height: 50px;">
+								<button><span>查看更多</span></button>
+							</li>
+						</ul>
+						<ul class="col-md-6">
+							<li class="info">
+								<span class="infoTime">
 							  	<p class="day">06</p>
                                 <p class="date">2017-06</p>
 							</span>
-                            <span class="text">
+								<span class="text">
 							 	<p class="title text-left">互联网医疗，离不开医检环节！这是医疗创业者们未关注到的风口</p>
 							 	<p class="introduction text-left">互联网医疗发展到今天,从健康管理到挂号预约、从医生问诊到线上药,中国优质医疗保健信息与在线健康服务平台,医疗保健类网...</p>
 							 </span>
-                        </li>
-                        <li class="info">
-                            <span class="infoTime">
+							</li>
+							<li class="info">
+								<span class="infoTime">
 							  	<p class="day">06</p>
                                 <p class="date">2017-06</p>
 							</span>
-                            <span class="text">
+								<span class="text">
 							 	<p class="title text-left">互联网医疗，离不开医检环节！这是医疗创业者们未关注到的风口</p>
 							 	<p class="introduction text-left">互联网医疗发展到今天,从健康管理到挂号预约、从医生问诊到线上药,中国优质医疗保健信息与在线健康服务平台,医疗保健类网...</p>
 							 </span>
-                        </li>
-                        <li class="info">
-                            <span class="infoTime">
+							</li>
+							<li class="info">
+								<span class="infoTime">
 							  	<p class="day">06</p>
                                 <p class="date">2017-06</p>
 							</span>
-                            <span class="text">
+								<span class="text">
 							 	<p class="title text-left">互联网医疗，离不开医检环节！这是医疗创业者们未关注到的风口</p>
 							 	<p class="introduction text-left">互联网医疗发展到今天,从健康管理到挂号预约、从医生问诊到线上药,中国优质医疗保健信息与在线健康服务平台,医疗保健类网...</p>
 							 </span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!--关于我们-->
-            <div class="latestInformation">
-                <h1 class="latestInformationLetter">ABOUT US</h1>
-                <h1 class="latestInformationFont">-关于我们-</h1>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--关于我们-->
+				<div class="text-center Information col-md-12 ">
+					<h1 class="latestInformationLetter">ABOUT US</h1>
+					<h1 class="latestInformationFont">-&nbsp;关于我们&nbsp;-</h1>
+					<div class="col-md-12">
+						<ul class="col-md-6">
+							<p class="hegnxian "></p>
+							<li class="about">
+								<span class="text">
+							 	<p class="title text-left">互联网医疗，离不开医检环节！这是医疗创业者们未关注到的风口</p>
+							 	<p class="introduction text-left marginTop" >我们是专业从事高科技医疗产品销售主攻信息化及智慧医院建设的信息科技公司。
 
-            </div>
-        </div>
-        <!--内容-->
-        <footer>
-            <span>
+我们的医疗器械产品涉及麻醉科、ICU、妇科等，
+以及拥有集互联网推广，客户终端服务为一体的线上营销平台；</p>
+							 	<p class="introduction text-left marginTop" >
+
+
+公司秉承弘毅、博信、崇优、共享的宗旨，集互联网推广，客户终
+端服务为一体的营销平台，我们深知“独木难以成舟，抱团可行沧海，思路决定出路”。唯有以技术引领方向，以项目带动发展，
+以理念培育市场，才符合市场发展的规律。							 	</p>
+							 	<p class="introduction text-left marginTop" >
+							 		
+
+现面向社会招聘精英业务人员，公司待遇优厚，空间大，前景好，符合社会信息化建设
+的大趋势，期待精英人士加入。 
+							 	</p>
+							 	
+							 </span>
+							</li>
+							<li style="height: 50px;">
+								<button><span>加入我们</span></button>
+							</li>
+						</ul>
+						<ul class="col-md-6">
+							<li class="img">
+								<img src="../../img/pic_about-us.png" />
+							</li>
+
+						</ul>
+					</div>
+				</div>
+				<!--企业文化-->
+				<div class="text-center Information col-md-12  ">
+					<h1 class="latestInformationLetter">ENTERPRISE CULTUSE</h1>
+					<h1 class="latestInformationFont">-&nbsp;企业文化&nbsp;-</h1>
+					<div class="col-md-12 enterpriseImg">
+						<div class="col-md-4">
+							<img src="../../img/pic2_1.png" alt="" />
+						</div>
+						<div class="col-md-4 enterpriseText">
+							<p class="enterpriseTitle">企业价值观</p>
+							<p class="hegnxian marginCenter enterpriseWidth"></p>
+							<p class="enterprise">正直、诚实；对客户、伙伴核心技术满怀热情；直率的与人相处，尊重他人并且乐于助人；用于迎接挑战并且坚持不懈；严于律己， 善于思考，坚持自我提高和完善；对客户、股东合作伙伴或者其他员工而言，在承诺、结果和质量方面值得信赖
+							</p>
+						</div>
+						<div class="col-md-4">
+							<img src="../../img/pic2_2.png" alt="" />
+						</div>
+					</div>
+					<div class="col-md-12 enterpriseImg">
+						<div class="col-md-4 enterpriseText">
+							<p class="enterpriseTitle">企业价值观</p>
+							<p class="hegnxian marginCenter enterpriseWidth"></p>
+							<p class="enterprise">正直、诚实；对客户、伙伴核心技术满怀热情；直率的与人相处，尊重他人并且乐于助人；用于迎接挑战并且坚持不懈；严于律己， 善于思考，坚持自我提高和完善；对客户、股东合作伙伴或者其他员工而言，在承诺、结果和质量方面值得信赖
+							</p>
+						</div>
+						<div class="col-md-4">
+							<img src="../../img/pic2_3.png" alt="" />
+						</div>
+						<div class="col-md-4 enterpriseText">
+							<p class="enterpriseTitle">企业价值观</p>
+						<p class="hegnxian marginCenter enterpriseWidth"></p>
+							<p class="enterprise">正直、诚实；对客户、伙伴核心技术满怀热情；直率的与人相处，尊重他人并且乐于助人；用于迎接挑战并且坚持不懈；严于律己， 善于思考，坚持自我提高和完善；对客户、股东合作伙伴或者其他员工而言，在承诺、结果和质量方面值得信赖
+							</p>
+						</div>
+					</div>
+				</div>
+				<!--联系我们-->
+				<div class="text-center Information col-md-12 Culture">
+					<h1 class="latestInformationLetter">ENTERPRISE CULTUSE</h1>
+					<h1 class="latestInformationFont">-&nbsp;联系我们&nbsp;-</h1>
+					<div class="col-md-12">
+						<div class="col-md-4 address"><span><img src="../../img/icon_address.png" alt="" /> </span>地址:四川省成都市武侯区布鲁明顿广场</div>
+						<div class="col-md-4 address marginLeft"><span><img src="../../img/icon_phone.png" alt="" /> </span>电话:028-61382243</div>
+						<div class="col-md-4 address marginLeft"><span><img src="../../img/icon_e-mail.png" alt="" /> </span>邮箱:scfy@yeafon.com</div>
+						<div class="col-md-12 Bmap">
+							<div id="allmap"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--内容-->
+			<footer>
+				<span>
 					&copy; 四川医帆有限公司 京公网安备11000002002025号 京ICP备12043664号-5
 				</span>
-        </footer>
-    </div>
-    <script type="text/javascript" src="../../js/jQuery/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="../../js/swiper/swiper.min.js"></script>
-    <script type="text/javascript" src="../../js/bootstrap/bootstrap.min.js"></script>
-</body>
-<script>
-    var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        paginationClickable: true,
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: 2500,
-        autoplayDisableOnInteraction: false
-    });
-</script>
+			</footer>
+		</div>
+		<script type="text/javascript" src="../../js/jQuery/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="../../js/swiper/swiper.min.js"></script>
+		<script type="text/javascript" src="../../js/bootstrap/bootstrap.min.js"></script>
+         <script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+	</body>
+	<script>
+var swiper = new Swiper('.swiper-container', {
+			pagination: '.swiper-pagination',
+			nextButton: '.swiper-button-next',
+			prevButton: '.swiper-button-prev',
+			paginationClickable: true,
+			spaceBetween: 30,
+			centeredSlides: true,
+			autoplay: 2500,
+			autoplayDisableOnInteraction: false
+		});
+
+		// 百度地图API功能
+		var map = new BMap.Map('allmap');
+		var poi = new BMap.Point(104.067687, 30.591391);
+		map.centerAndZoom(poi, 30);
+		map.enableScrollWheelZoom();
+
+		var content = '<div style="margin:0;line-height:20px;padding:2px;">' +
+			'<img src="../../img/address.jpg" alt="" style="float:right;zoom:1;overflow:hidden;width:100px;height:100px;margin-left:3px;"/>' +
+			'地址：四川省成都市武侯区布鲁明顿广场1504<br/>电话：028-61382243<br/>简介：布鲁明顿广场,是高新区核心地带，成都未来的CBD核心区。' +
+			'</div>';
+
+		//创建检索信息窗口对象
+		var searchInfoWindow = null;
+		searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
+			title: "四川医帆信息科技有限公司", //标题
+			width: 290, //宽度
+			height: 105, //高度
+			panel: "panel", //检索结果面板
+			enableAutoPan: true, //自动平移
+			searchTypes: [
+				BMAPLIB_TAB_SEARCH, //周边检索
+				BMAPLIB_TAB_TO_HERE, //到这里去
+				BMAPLIB_TAB_FROM_HERE //从这里出发
+			]
+		});
+		var pt = new BMap.Point(104.067687, 30.591391);
+		var myIcon = new BMap.Icon("../../img/icon_address2.png", new BMap.Size(50, 50));
+		var marker2 = new BMap.Marker(pt, {
+			icon: myIcon
+		}); // 创建标注
+		marker2.addEventListener("click", function(e) {
+			searchInfoWindow.open(marker2);
+		})
+		map.addOverlay(marker2); // 将标注添加到地图中
+	</script>
 
 </html>

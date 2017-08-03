@@ -1,0 +1,8 @@
+.introductionImg{
+	width: 100%;
+	height: 600px;
+	margin-top: -63px;
+	background: url(../../img/bg.png);  
+-moz-background-size:100% 100%;  
+    background-size:100% 100%;  
+	}
